@@ -1,12 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alper's Portfolio</title>
+    <meta charset="utf-8" />
+    <title>Alper Yazagan, Portfolio</title>
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <div class="background"></div>
+    <div class="wrapper" style="display: none">
+      <div class="stars"></div>
+      <div class="hero section" id="home">
+        <div class="hero-content">
+          <div>Hi, I'm <span class="my-name">Alper</span></div>
+          <div>I'm a Front-End developer.</div>
+          <a href="#about">
+            <button class="view-my-work-btn">
+              View my work <i class="ph-arrow-down"></i>
+            </button>
+          </a>
+        </div>
+      </div>
+      <nav class="nav-bar">
+        <a href="#home" id="tab-home">home</a>
+        <a href="#about" id="tab-about">about</a>
+        <a href="#projects" id="tab-projects">projects</a>
+        <a href="#contact" id="tab-contact">contact</a>
+      </nav>
+      <div class="about section" id="about">
+        <h1>About</h1>
+        <div class="about-content">
+          <div class="bio">
+            <img src="./assets/code-svgrepo-com.svg" alt="" class="code-img" />
+            <p class="bio-desc">
+              Despite having a career as environmental engineer specialized on
+              industrial water treatment, coding was always a passion for me.
+              One year ago i decided to turn my hobby into career and became a
+              front-end developer. I mainly work with JavaScript adn ReactJS and
+              currently learning back-end.
+            </p>
+          </div>
+          <div class="technologies">
+            <div class="tech-row">
+              <div class="tech">
+                <i class="devicon-html5-plain colored"></i>
+                <div>html5</div>
+              </div>
+              <div class="tech">
+                <i class="devicon-css3-plain colored"></i>
+                <div>css3</div>
+              </div>
+              <div class="tech">
+                <i class="devicon-javascript-plain colored"></i>
+                <div>javascript</div>
+              </div>
+            </div>
+            <div class="tech-row">
+              <div class="tech">
+                <i class="devicon-react-original colored"></i>
+                <div>react</div>
+              </div>
+              <div class="tech">
+                <i class="devicon-git-plain colored"></i>
+                <div>git</div>
+              </div>
+              <div class="tech">
+                <i class="devicon-webpack-plain colored"></i>
+                <div>webpack</div>
+              </div>
+              <div class="tech">
+                <i class="devicon-npm-original-wordmark colored"></i>
+                <div>npm</div>
+              </div>
+            </div>
+            <div class="tech-row">
+              <div class="tech">
+                <i class="devicon-sass-original colored"></i>
+                <div>sass</div>
+              </div>
+              <div class="tech">
+                <i class="devicon-jest-plain colored"></i>
+                <div>jest</div>
+              </div>
+              <div class="tech">
+                <i class="devicon-firebase-plain colored"></i>
+                <div>firebase</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="projects section" id="projects">
+        <h1>Projects</h1>
+        <div class="projects-content">
+          <div class="project">
+            <div class="project-desc">
+              <div class="project-title">
+                <h2>Back To The BTC</h2>
+              </div>
+              <div class="project-desc-text">
+                A text based game that you can mine bitcoin, upgrade your mining
+                stack and exchange BTC-USD on stock market with real world data
+                between 2012-2022. <br /><br /><em
+                  >Built using ReactJS and React Router</em
+                >
+              </div>
+              <div class="project-desc-btns">
+                <div class="main_div">
+                  <a href="https://backtobtc.netlify.app"
+                    ><button>live demo</button></a
+                  >
+                </div>
+                <div class="main_div">
+                  <a href="https://github.com/Alperadoss/Back-To-The-BTC.git"
+                    ><button>view code</button></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="vid-container">
+              <p>PUT HERE GIF OF GAME</p>
+            </div>
+          </div>
+          <div class="project">
+            <div class="vid-container">
+              <p>PUT HERE GIF OF APP</p>
+            </div>
+            <div class="project-desc">
+              <div class="project-title">
+                <h2>CV App</h2>
+              </div>
+              <div class="project-desc-text">
+                An app which you can create structured CVs and take PDF copies.
+                <br /><br /><em>Built using ReactJS</em>
+              </div>
+              <div class="project-desc-btns">
+                <div class="main_div">
+                  <a href="https://cvapp-alperadoss.netlify.app"
+                    ><button>live demo</button></a
+                  >
+                </div>
+                <div class="main_div">
+                  <a href="https://github.com/Alperadoss/CV-Builder.git"
+                    ><button>view code</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact section" id="contact">
+        <h1>Contact</h1>
+        <div class="contact-content">
+          <div class="contact-text">
+            If you'd like to get in touch with me, feel free to send me an
+            e-mail or reach on linkedin.
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <a href="#home" class="back-to-top">back to top</a>
+        <a href="https://github.com/Alperadoss"
+          ><i class="devicon-github-original"> </i
+        ></a>
+        <a href="mailto:alperyazagan@gmail.com"
+          ><i class="ph-paper-plane-tilt"></i
+        ></a>
+      </div>
+    </div>
   </body>
 </html>
