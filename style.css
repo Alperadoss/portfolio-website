@@ -65,11 +65,11 @@ p {
 }
 
 /* FIRST PAGE - HERO */
+
 .hero {
   text-align: center;
   height: 100vh;
   width: 100vw;
-  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,13 +84,12 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transform: perspective(1000px) translateZ(100px);
 }
 
 #profilepic {
   border-radius: 50%;
   border: solid 3px black;
-  width: 10rem;
+  width: 14rem;
 }
 
 .my-name {
@@ -298,13 +297,8 @@ p {
 .bio {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-}
-
-.bio img {
-  width: 225px;
-  filter: invert(1);
-  margin-bottom: 8px;
 }
 
 .bio-desc {
@@ -343,4 +337,31 @@ p {
 }
 .technologies i {
   font-size: 75px;
+}
+
+@media (max-width: 500px) {
+  .about {
+    padding: 0.5rem;
+  }
+  .about-content {
+    flex-direction: column;
+  }
+  .project {
+    flex-direction: column;
+  }
+  .nav-bar {
+    justify-content: center;
+  }
+  .hero {
+    width: auto;
+  }
+  .technologies {
+    flex-direction: row;
+  }
+  .technologies .tech-row {
+    flex-direction: column;
+  }
+  .about {
+    margin-bottom: 6rem;
+  }
 }
