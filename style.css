@@ -232,6 +232,11 @@ p {
   background: rgb(252, 238, 38);
 }
 
+.img-container {
+  display: flex;
+  column-gap: 0.5rem;
+}
+
 /* CONTACT */
 .contact {
   width: 100%;
@@ -275,10 +280,11 @@ p {
 /* ABOUT */
 .about {
   width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 24px 48px 0 48px;
+  padding: 3rem 2rem 0 2rem;
   position: relative;
   box-sizing: border-box;
 }
