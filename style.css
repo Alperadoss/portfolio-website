@@ -34,6 +34,12 @@ p {
   font-size: 1rem;
 }
 
+button:hover {
+  color: rgb(252, 238, 38);
+  transition: all 0.3s;
+  border: 1px solid rgb(252, 238, 38);
+}
+
 /* FOOTER */
 .footer {
   height: 3rem;
@@ -348,12 +354,18 @@ p {
   }
   .project {
     flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
   .nav-bar {
     justify-content: center;
   }
   .hero {
     width: auto;
+  }
+  .hero-content {
+    margin-right: 5rem;
+    margin-left: 5rem;
   }
   .technologies {
     flex-direction: row;
@@ -362,6 +374,23 @@ p {
     flex-direction: column;
   }
   .about {
-    margin-bottom: 6rem;
+    margin-bottom: 16rem;
+  }
+  .contact-text {
+    margin-right: 5rem;
+    margin-left: 5rem;
+  }
+  .project-desc {
+    width: 360px;
+  }
+
+  .img-container img {
+    width: 180px;
+  }
+  #cvimg {
+    width: 360px;
+  }
+  .bio-desc {
+    width: 360px;
   }
 }
