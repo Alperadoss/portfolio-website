@@ -30,6 +30,10 @@ h2 {
   margin-bottom: 1rem;
 }
 
+p {
+  font-size: 1rem;
+}
+
 /* FOOTER */
 .footer {
   height: 8rem;
@@ -72,4 +76,90 @@ h2 {
 
 .footer i:hover {
   color: rgb(252, 238, 38);
+}
+
+/* FIRST PAGE - HERO */
+.hero {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 42px;
+  font-weight: 300;
+  padding: 48px;
+  box-sizing: border-box;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: perspective(1000px) translateZ(100px);
+}
+
+#profilepic {
+  border-radius: 50%;
+  border: solid 3px black;
+  width: 10rem;
+}
+
+.my-name {
+  color: rgb(211, 72, 72);
+}
+
+.view-my-work-btn {
+  width: 250px;
+  height: 50px;
+  background-color: transparent;
+  color: rgb(211, 72, 72);
+  border: none;
+  font-family: inherit;
+  font-size: 24px;
+  margin-top: 16px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8px;
+  animation: focus-in 2s;
+  z-index: 2;
+}
+
+/* NAVBAR */
+.nav-bar {
+  height: 4rem;
+  width: 100%;
+  background-color: rgba(21, 32, 46, 0.75);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  column-gap: 2rem;
+  z-index: 3;
+  box-sizing: border-box;
+  padding: 0 4rem 0 4rem;
+}
+
+.nav-bar a {
+  font-family: inherit;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.2rem;
+  transition: 0.3s;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
 }
