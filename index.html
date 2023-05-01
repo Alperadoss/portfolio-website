@@ -19,101 +19,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script defer src="index.js"></script>
   </head>
-  <body>
+  <body
+    class="bg-sky-900 text-white m-0 flex flex-col items-center min-h-screen overflow-y-auto text-lg font-light"
+  >
     <div class="wrapper" style="display: initial">
-      <div class="hero section" id="home">
-        <div class="hero-content">
+      <div
+        class="hero text-center h-screen w-screen flex flex-col items-center justify-center text-[34px] font-light box-border p-12;"
+        id="home"
+      >
+        <div class="hero-content flex flex-col items-center justify-center;">
           <img
+            class="rounded-full w-3/4 border-4 border-solid border-black"
             id="profilepic"
             src="./assets/profile-pic.jpg"
             alt="profile-pic"
           />
-          <div>Hi, I'm <span class="my-name">Alper</span></div>
-          <h2 class="text-3xl">I'm a Front-End Developer</h2>
+          <div class="my-4">
+            Hi, I'm <span class="text-red-500 font-semibold">Alper</span>
+          </div>
+          <h2>I'm a Front-End Developer</h2>
           <a href="#about">
-            <button class="view-my-work-btn">
+            <button
+              class="view-my-work-btn w-[250px] h-[50px] text-[rgb(211,72,72)] text-2xl cursor-pointer relative flex items-center justify-center gap-x-2 animate-[focus-in_2s] z-[2] mt-4 border-[none]; font-family: inherit hover:text-[rgb(252,238,38)] hover:transition-all hover:border hover:border-solid hover:border-[rgb(252,238,38)]"
+            >
               View my work <i class="ph-arrow-down"></i>
             </button>
           </a>
         </div>
       </div>
-      <nav class="nav-bar">
+      <nav
+        class="nav-bar h-16 w-full bg-[rgba(21,32,46,0.75)] shadow-[4px_4px_12px_rgba(0,0,0,0.5)] sticky flex items-center justify-end gap-x-8 z-[3] box-border px-16 py-0 top-0;"
+      >
         <a href="#home" id="tab-home">home</a>
         <a href="#about" id="tab-about">about</a>
         <a href="#projects" id="tab-projects">projects</a>
         <a href="#contact" id="tab-contact">contact</a>
       </nav>
-      <div class="about section" id="about">
+      <div
+        class="about w-full h-screen flex flex-col items-center relative box-border pt-12 pb-0 px-8"
+      >
         <h1>About</h1>
-        <div class="about-content">
-          <div class="bio">
+        <div class="about-content flex flex-col gap-6">
+          <div class="bio flex flex-col justify-center items-center">
             <p class="bio-desc">
-              Despite having a career as environmental engineer specialized on
-              industrial water treatment, coding was always a passion for me.
-              One year ago i decided to turn my hobby into a career and became a
-              front-end developer. I mainly work with JavaScript and ReactJS and
-              currently learning NodeJS for back-end.
+              After 8 years as an environmental engineer, I pursued my passion
+              for coding and became a front-end developer. I specialize in
+              JavaScript & ReactJS and I'm learning NodeJS for back-end. With
+              strong problem-solving skills and attention to detail, I bring a
+              unique perspective to every project.
             </p>
           </div>
-          <div class="technologies">
-            <div class="tech-row">
-              <div class="tech">
-                <i class="devicon-html5-plain colored"></i>
+          <div class="technologies flex gap-4 flex-col justify-center">
+            <div class="tech-row flex pt-4 gap-3 justify-center">
+              <div
+                class="tech w-20 h-20 flex flex-col items-center justify-center backdrop-blur-sm"
+              >
+                <i class="devicon-html5-plain colored text-[60px]"></i>
                 <div>HTML5</div>
               </div>
-              <div class="tech">
-                <i class="devicon-css3-plain colored"></i>
+              <div
+                class="tech w-20 h-20 flex flex-col items-center justify-center backdrop-blur-sm"
+              >
+                <i class="devicon-css3-plain colored text-[60px]"></i>
                 <div>CSS3</div>
               </div>
-              <div class="tech">
-                <i class="devicon-sass-original colored"></i>
-                <div>sass</div>
+              <div
+                class="tech w-20 h-20 flex flex-col items-center justify-center backdrop-blur-sm"
+              >
+                <i class="devicon-sass-original colored text-[60px]"></i>
+                <div>Sass</div>
               </div>
-              <div class="tech">
-                <i class="devicon-tailwindcss-plain colored"></i>
+              <div
+                class="tech w-20 h-20 flex flex-col items-center justify-center backdrop-blur-sm"
+              >
+                <i class="devicon-tailwindcss-plain colored text-[60px]"></i>
                 <div>Tailwind</div>
               </div>
             </div>
-            <div class="tech-row">
-              <div class="tech">
-                <i class="devicon-javascript-plain colored"></i>
+            <div class="tech-row flex pt-4 gap-3 justify-center">
+              <div
+                class="tech w-20 h-20 flex flex-col items-center justify-center backdrop-blur-sm"
+              >
+                <i class="devicon-javascript-plain colored text-[60px]"></i>
                 <div>JavaScript</div>
               </div>
-              <div class="tech">
-                <i class="devicon-react-original colored"></i>
+              <div
+                class="tech w-20 h-20 flex flex-col items-center justify-center backdrop-blur-sm"
+              >
+                <i class="devicon-typescript-plain colored text-[60px]"></i>
+                <div>TypeScript</div>
+              </div>
+              <div
+                class="tech w-20 h-20 flex flex-col items-center justify-center backdrop-blur-sm"
+              >
+                <i class="devicon-react-original colored text-[60px]"></i>
                 <div>React</div>
               </div>
-              <div class="tech">
-                <i class="devicon-git-plain colored"></i>
+              <div
+                class="tech w-20 h-20 flex flex-col items-center justify-center backdrop-blur-sm"
+              >
+                <i class="devicon-git-plain colored text-[60px]"></i>
                 <div>git</div>
               </div>
             </div>
-            <div class="tech-row">
-              <div class="tech">
-                <i class="devicon-jest-plain colored"></i>
+            <div class="tech-row flex pt-4 gap-4 justify-center">
+              <div
+                class="tech w-20 h-20 flex flex-col items-center justify-center backdrop-blur-sm"
+              >
+                <i class="devicon-jest-plain colored text-[60px]"></i>
                 <div>jest</div>
               </div>
-              <div class="tech">
-                <i class="devicon-webpack-plain colored"></i>
+              <div
+                class="tech w-20 h-20 flex flex-col items-center justify-center backdrop-blur-sm"
+              >
+                <i class="devicon-webpack-plain colored text-[60px]"></i>
                 <div>webpack</div>
               </div>
-              <div class="tech">
-                <i class="devicon-firebase-plain colored"></i>
+              <div
+                class="tech w-20 h-20 flex flex-col items-center justify-center backdrop-blur-sm"
+              >
+                <i class="devicon-firebase-plain colored text-[60px]"></i>
                 <div>firebase</div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="projects section" id="projects">
+      <div
+        class="projects w-full flex flex-col items-center relative box-border overflow-hidden pt-6;"
+      >
         <h1>Projects</h1>
-        <div class="projects-content">
-          <div class="project">
+        <div
+          class="projects-content flex flex-col w-full gap-6 box-border mt-6 px-24;"
+        >
+          <div
+            class="project flex flex-col justify-center items-center box-border"
+          >
             <div class="project-title">
               <h2>Back To The BTC</h2>
             </div>
-            <div class="project-desc">
-              <div>
+            <div class="project-desc flex flex-col justify-center z-[2] mb-3">
+              <div class="w-[380px]">
                 <div class="project-desc-text">
                   A text based game that you can mine bitcoin, upgrade your
                   mining stack and exchange BTC-USD on stock market with real
@@ -121,34 +167,32 @@
                     >Built with ReactJS and React Router</em
                   >
                 </div>
-                <div class="project-desc-btns">
+                <div class="project-desc-btns flex gap-6 flex-wrap mt-[30px]">
                   <div class="main_div">
                     <a href="https://backtobtc.netlify.app"
                       ><button>live demo</button></a
                     >
                   </div>
-                  <div class="main_div">
+                  <div
+                    class="main_div relative z-[1] h-[50px] ml-[7px] mt-[7px];"
+                  >
                     <a href="https://github.com/Alperadoss/Back-To-The-BTC.git"
                       ><button>view code</button></a
                     >
                   </div>
                 </div>
               </div>
-              <div class="img-container">
-                <img src="./assets/game-ss1.png" />
-                <img src="./assets/game-ss2.png" />
-              </div>
+              <img class="w-[80%] self-center" src="./assets/game-ss2.png" />
             </div>
           </div>
-          <div class="project">
+          <div
+            class="project flex flex-col justify-center items-center box-border"
+          >
             <div class="project-title">
               <h2>CV App</h2>
             </div>
-            <div class="project-desc">
-              <div class="img-container">
-                <img src="./assets/cvapp-ss.png" id="cvimg" alt="game-pic" />
-              </div>
-              <div>
+            <div class="project-desc flex flex-col justify-center z-[2] mb-3">
+              <div class="w-[380px]">
                 <div class="project-desc-text">
                   An app which you can create structured CVs and take PDF
                   copies.
@@ -167,14 +211,21 @@
                   </div>
                 </div>
               </div>
+              <img
+                class="w-[80%] self-center"
+                src="./assets/cvapp-ss.png"
+                alt="game-pic"
+              />
             </div>
           </div>
-          <div class="project">
+          <div
+            class="project flex flex-col justify-center items-center box-border"
+          >
             <div class="project-title">
               <h2>Weather App</h2>
             </div>
-            <div class="project-desc">
-              <div>
+            <div class="project-desc flex flex-col justify-center z-[2] mb-3">
+              <div class="w-[380px]">
                 <div class="project-desc-text">
                   When user starts to type first letters of city app lists
                   matching cities with API and after choosing the city displays
@@ -195,35 +246,51 @@
                   </div>
                 </div>
               </div>
-              <div class="img-container">
-                <img src="./assets/weather-ss1.png" />
-              </div>
+
+              <img class="w-[80%] self-center" src="./assets/weather-ss1.png" />
             </div>
           </div>
         </div>
       </div>
-      <div class="contact section" id="contact">
+      <div
+        class="contact w-full flex flex-col items-center relative box-border mb-28 pt-6 pb-0 px-6"
+      >
         <h1>Contact</h1>
-        <div class="contact-content">
+        <div class="contact-content flex flex-col items-center mt-6">
           <div class="contact-text">
             If you'd like to get in touch with me, feel free to send me an
             e-mail or reach out on linkedin.
           </div>
-          <div id="contactlinks">
-            <a href="https://github.com/Alperadoss"
-              ><i class="devicon-github-original"> </i
+          <div id="contactlinks flex justify-evenly mt-8 px-8 py-2">
+            <a class="text-[white]" href="https://github.com/Alperadoss"
+              ><i
+                class="devicon-github-original text-5xl cursor-pointer transition-[0.3s] hover:text-[rgb(252,238,38)]"
+              >
+              </i
             ></a>
-            <a href="mailto:alperyazagan@gmail.com"
-              ><i class="ph-paper-plane-tilt"></i
+            <a class="text-[white]" href="mailto:alperyazagan@gmail.com"
+              ><i
+                class="ph-paper-plane-tilt text-5xl cursor-pointer transition-[0.3s] hover:text-[rgb(252,238,38)]"
+              ></i
             ></a>
-            <a href="https://www.linkedin.com/in/alper-yazagan-b56776143/"
-              ><i class="devicon-linkedin-plain"></i
+            <a
+              class="text-[white]"
+              href="https://www.linkedin.com/in/alper-yazagan-b56776143/"
+              ><i
+                class="devicon-linkedin-plain text-5xl cursor-pointer transition-[0.3s] hover:text-[rgb(252,238,38)]"
+              ></i
             ></a>
           </div>
         </div>
       </div>
-      <div class="footer">
-        <a href="#home" class="back-to-top">back to top</a>
+      <div
+        class="footer h-12 w-full bg-blue-950/[.6] flex justify-center items-center gap-x-8 relative bg-blur-sm;"
+      >
+        <a
+          href="#home"
+          class="back-to-top absolute top-[-0.8rem] bg-[rgb(241,46,46)] text-[white] w-32 h-8 cursor-pointer flex justify-center items-center text-base font-semibold"
+          >back to top</a
+        >
       </div>
     </div>
   </body>
