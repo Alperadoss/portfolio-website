@@ -37,7 +37,7 @@
           <div class="my-4">
             Hi, I'm <span class="text-red-500 font-semibold">Alper</span>
           </div>
-          <h2>I'm a Front-End Developer</h2>
+          <h2 class="text-2xl">I'm a Front-End Developer</h2>
           <a href="#about">
             <button
               class="view-my-work-btn w-[250px] h-[50px] text-[rgb(211,72,72)] text-2xl cursor-pointer relative flex items-center justify-center animate-[focus-in_2s] z-[2] mt-4 border-[none]; font-family: inherit hover:text-[rgb(252,238,38)] hover:transition-all hover:border hover:border-solid hover:border-[rgb(252,238,38)]"
@@ -48,7 +48,7 @@
         </div>
       </div>
       <nav
-        class="nav-bar h-16 w-full bg-[rgba(21,32,46,0.75)] shadow-[4px_4px_12px_rgba(0,0,0,0.5)] sticky flex items-center justify-end z-[3] box-border px-16 py-0 top-0;"
+        class="h-16 w-full bg-[rgba(21,32,46,0.75)] shadow-[4px_8px_12px_rgba(0,0,0,0.5)] sticky top-0 flex items-center justify-around z-[3] box-border px-16 py-0 top-0;"
       >
         <a href="#home" id="tab-home">home</a>
         <a href="#about" id="tab-about">about</a>
@@ -56,19 +56,17 @@
         <a href="#contact" id="tab-contact">contact</a>
       </nav>
       <div
-        class="about w-full h-screen flex flex-col items-center relative box-border pt-12 pb-0 px-8"
+        class="w-full h-screen flex flex-col items-center relative box-border pt-12 pb-0 px-8"
       >
-        <h1>About</h1>
+        <h2 id="about" class="text-2xl pt-6">About</h2>
         <div class="about-content flex flex-col">
-          <div class="bio flex flex-col justify-center items-center">
-            <p class="bio-desc">
-              After 8 years as an environmental engineer, I pursued my passion
-              for coding and became a front-end developer. I specialize in
-              JavaScript & ReactJS and I'm learning NodeJS for back-end. With
-              strong problem-solving skills and attention to detail, I bring a
-              unique perspective to every project.
-            </p>
-          </div>
+          <p class="bio-desc py-8">
+            After 8 years as an environmental engineer, I pursued my passion for
+            coding and became a front-end developer. I specialize in JavaScript
+            & ReactJS and I'm learning NodeJS for back-end. With strong
+            problem-solving skills and attention to detail, I bring a unique
+            perspective to every project.
+          </p>
           <div class="technologies flex flex-col justify-center">
             <div class="tech-row flex pt-4 justify-center">
               <div
@@ -96,12 +94,45 @@
                 <div>Tailwind</div>
               </div>
             </div>
+
+            <div class="tech-row flex py-6 justify-center">
+              <div
+                class="tech w-20 h-20 flex flex-col items-center justify-center backdrop-blur-sm"
+              >
+                <i class="devicon-bootstrap-plain colored text-[60px]"></i>
+                <div>Bootstrap</div>
+              </div>
+              <div
+                class="tech w-20 h-20 flex flex-col items-center justify-center backdrop-blur-sm"
+              >
+                <i class="devicon-jest-plain colored text-[60px]"></i>
+                <div>Jest</div>
+              </div>
+              <div
+                class="tech w-20 h-20 flex flex-col items-center justify-center backdrop-blur-sm"
+              >
+                <i class="devicon-webpack-plain colored text-[60px]"></i>
+                <div>Webpack</div>
+              </div>
+              <div
+                class="tech w-20 h-20 flex flex-col items-center justify-center backdrop-blur-sm"
+              >
+                <i class="devicon-firebase-plain colored text-[60px]"></i>
+                <div>Firebase</div>
+              </div>
+            </div>
             <div class="tech-row flex pt-4 justify-center">
               <div
                 class="tech w-20 h-20 flex flex-col items-center justify-center backdrop-blur-sm"
               >
                 <i class="devicon-javascript-plain colored text-[60px]"></i>
                 <div>JavaScript</div>
+              </div>
+              <div
+                class="tech w-20 h-20 flex flex-col items-center justify-center backdrop-blur-sm"
+              >
+                <i class="devicon-git-plain colored text-[60px]"></i>
+                <div>git</div>
               </div>
               <div
                 class="tech w-20 h-20 flex flex-col items-center justify-center backdrop-blur-sm"
@@ -115,66 +146,41 @@
                 <i class="devicon-react-original colored text-[60px]"></i>
                 <div>React</div>
               </div>
-              <div
-                class="tech w-20 h-20 flex flex-col items-center justify-center backdrop-blur-sm"
-              >
-                <i class="devicon-git-plain colored text-[60px]"></i>
-                <div>git</div>
-              </div>
-            </div>
-            <div class="tech-row flex pt-4 justify-center">
-              <div
-                class="tech w-20 h-20 flex flex-col items-center justify-center backdrop-blur-sm"
-              >
-                <i class="devicon-jest-plain colored text-[60px]"></i>
-                <div>jest</div>
-              </div>
-              <div
-                class="tech w-20 h-20 flex flex-col items-center justify-center backdrop-blur-sm"
-              >
-                <i class="devicon-webpack-plain colored text-[60px]"></i>
-                <div>webpack</div>
-              </div>
-              <div
-                class="tech w-20 h-20 flex flex-col items-center justify-center backdrop-blur-sm"
-              >
-                <i class="devicon-firebase-plain colored text-[60px]"></i>
-                <div>firebase</div>
-              </div>
             </div>
           </div>
         </div>
       </div>
       <div
-        class="projects w-full flex flex-col items-center relative box-border overflow-hidden pt-6;"
+        id="projects"
+        class="w-full flex flex-col items-center relative box-border pt-12 pb-0 px-8"
       >
-        <h1>Projects</h1>
-        <div
-          class="projects-content flex flex-col w-full box-border mt-6 px-24;"
-        >
+        <h1 class="text-2xl">Projects</h1>
+        <div class="projects-content flex flex-col box-border mt-6 px-24;">
           <div
             class="project flex flex-col justify-center items-center box-border"
           >
             <div class="project-title">
-              <h2>Back To The BTC</h2>
+              <h2 class="font-semibold">Back To The BTC</h2>
             </div>
             <div class="project-desc flex flex-col justify-center z-[2] mb-3">
-              <div class="w-[380px]">
-                <div class="project-desc-text">
+              <div>
+                <div>
                   A text based game that you can mine bitcoin, upgrade your
                   mining stack and exchange BTC-USD on stock market with real
                   world data between 2012-2022. <br /><em
                     >Built with ReactJS and React Router</em
                   >
                 </div>
-                <div class="project-desc-btns flex flex-wrap mt-[30px]">
-                  <div class="main_div">
+                <div class="flex items-center justify-evenly m-4">
+                  <div
+                    class="border-solid border-white border-2 rounded-lg px-2"
+                  >
                     <a href="https://backtobtc.netlify.app"
                       ><button>live demo</button></a
                     >
                   </div>
                   <div
-                    class="main_div relative z-[1] h-[50px] ml-[7px] mt-[7px];"
+                    class="border-solid border-white border-2 rounded-lg px-2"
                   >
                     <a href="https://github.com/Alperadoss/Back-To-The-BTC.git"
                       ><button>view code</button></a
@@ -190,25 +196,28 @@
             </div>
           </div>
           <div
-            class="project flex flex-col justify-center items-center box-border"
+            class="project flex flex-col justify-center items-center box-border pt-6"
           >
             <div class="project-title">
-              <h2>CV App</h2>
+              <h2 class="font-semibold">CV App</h2>
             </div>
             <div class="project-desc flex flex-col justify-center z-[2] mb-3">
-              <div class="w-[380px]">
-                <div class="project-desc-text">
-                  An app which you can create structured CVs and take PDF
-                  copies.
+              <div>
+                <div>
+                  An app to create structured CVs and take PDF copies.
                   <br /><em>Built with ReactJS</em>
                 </div>
-                <div class="project-desc-btns flex flex-wrap mt-[30px]">
-                  <div class="main_div">
+                <div class="flex items-center justify-evenly m-4">
+                  <div
+                    class="border-solid border-white border-2 rounded-lg px-2"
+                  >
                     <a href="https://cvapp-alperadoss.netlify.app"
                       ><button>live demo</button></a
                     >
                   </div>
-                  <div class="main_div">
+                  <div
+                    class="border-solid border-white border-2 rounded-lg px-2"
+                  >
                     <a href="https://github.com/Alperadoss/CV-Builder.git"
                       ><button>view code</button></a
                     >
@@ -223,27 +232,30 @@
             </div>
           </div>
           <div
-            class="project flex flex-col justify-center items-center box-border"
+            class="project flex flex-col justify-center items-center box-border pt-6"
           >
             <div class="project-title">
-              <h2>Weather App</h2>
+              <h2 class="font-semibold">Weather App</h2>
             </div>
             <div class="project-desc flex flex-col justify-center z-[2] mb-3">
-              <div class="w-[380px]">
-                <div class="project-desc-text">
-                  When user starts to type first letters of city app lists
-                  matching cities with API and after choosing the city displays
-                  weather info<br /><em
+              <div>
+                <div>
+                  After typing first letters of city, app lists matching cities
+                  with API and after choosing the city displays weather info<br /><em
                     >Built with ReactJS, GeoDB API and OpenWeather API</em
                   >
                 </div>
-                <div class="project-desc-btns flex flex-wrap mt-[30px]">
-                  <div class="main_div">
+                <div class="flex items-center justify-evenly m-4">
+                  <div
+                    class="border-solid border-white border-2 rounded-lg px-2"
+                  >
                     <a href="https://alperadoss-weather-app.netlify.app"
                       ><button>live demo</button></a
                     >
                   </div>
-                  <div class="main_div">
+                  <div
+                    class="border-solid border-white border-2 rounded-lg px-2"
+                  >
                     <a href="https://github.com/Alperadoss/WeatherApp.git"
                       ><button>view code</button></a
                     >
@@ -260,22 +272,23 @@
         </div>
       </div>
       <div
-        class="contact w-full flex flex-col items-center relative box-border mb-28 pt-6 pb-0 px-6"
+        id="contact"
+        class="contact flex flex-col items-center relative box-border py-16 px-6"
       >
-        <h1>Contact</h1>
+        <h1 class="text-2xl">Contact</h1>
         <div class="contact-content flex flex-col items-center mt-6">
-          <div class="contact-text">
+          <div>
             If you'd like to get in touch with me, feel free to send me an
             e-mail or reach out on linkedin.
           </div>
-          <div id="contactlinks flex justify-evenly mt-8 px-8 py-2">
+          <div class="flex justify-around">
             <a class="text-[white]" href="https://github.com/Alperadoss"
               ><i
                 class="devicon-github-original text-5xl cursor-pointer transition-[0.3s] hover:text-[rgb(252,238,38)]"
               >
               </i
             ></a>
-            <a class="text-[white]" href="mailto:alperyazagan@gmail.com"
+            <a class="text-[white] mx-8" href="mailto:alperyazagan@gmail.com"
               ><i
                 class="ph-paper-plane-tilt text-5xl cursor-pointer transition-[0.3s] hover:text-[rgb(252,238,38)]"
               ></i
