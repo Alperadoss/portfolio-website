@@ -60,6 +60,8 @@
     }
   }
 
+  //Recommendation: math.div(random_range(0, 10000s), 1000)
+  // or calc(random_range(0, 10000s) / 1000)
   &::before,
   &::after {
     position: absolute;
